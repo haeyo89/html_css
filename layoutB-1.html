@@ -11,8 +11,8 @@
         }
         #wrap {
             width: 100%;
-        
         }
+
         #header {
             width: 100%;
             background-color: #aaaaff;
@@ -25,20 +25,22 @@
         #header .header_container .logo {
             width: 20%;
             height: 100px;
-            background-color: #455555;
+            background-color: #FF11FF;
         }
         #header .header_container .nav {
             width: 80%;
             height: 100px;
-            background-color: #fafafa;
+            background-color: #122333;
         }
         #slider {
-            width: 100%;
+            width: 1200px;
             height: 300px;
+            margin: 0 auto;
             background-color: #123456;
         }
         #contents {
-            width: 100%;
+            width: 1200px;
+            margin: 0 auto;
             display: flex;
         }
         #contents .content1 {
@@ -57,19 +59,35 @@
             background-color: #af00af;
         }
         #footer {
-            width: 1200px;
+            width: 100%;
             height: 100px;
             background-color: #c1c1c1;
         }
-        #footer .footer1 {
+        #footer .footer_container {
+            width: 1200px;
+            margin: 0 auto;
+            height: 100px;
+            display: flex;
+        }
+        #footer .footer_container .footer1 {
             width: 20%;
             height: 100px;
-            background-color: #fff;
+            background-color: #f00;
         }
-        #footer .footer2 {
+        #footer .footer_container .footer2 {
             width: 80%;
             height: 100px;
-            background-color: #dddaaa;
+            background-color: #ff1;
+        }
+        #footer .footer_container .footer2 .footer2-1 {
+            width: 100%;
+            height: 50px;
+            background-color: #929292;
+        }
+        #footer .footer_container .footer2 .footer2-2 {
+            width: 100%;
+            height: 50px;
+            background-color: #756822;
         }
     </style>
 </head>
@@ -91,10 +109,12 @@
          </main>
          <!-- co -->
         <footer id="footer">
-            <div class="footer1"></div>
-            <div class="footer2">
-                <div class="footer2-1"></div>
-                <div class="footer2-2"></div>
+            <div class="footer_container">
+                <div class="footer1"></div>
+                <div class="footer2">
+                    <div class="footer2-1"></div>
+                    <div class="footer2-2"></div>
+                </div>
             </div>
         </footer>
      </div>
