@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹디자인개발기능사 레이아웃 C-3</title>
+    <style>
+        * {
+            margin: 0;
+            position: relative;
+        }
+        #wrap {
+            width: 1000px;
+            display: flex;
+        }
+        #aside {
+            width: 20%;
+            height: 650px;
+            background-color: #235aff;
+        }
+        #aside .logo {
+            width: 100%;
+            height: 100px;
+            background-color: #123456;
+        }
+        #aside .nav {
+            width: 100%;
+            height: 550px;
+            background-color: #06f;
+        }
+        #main {
+            width: 80%;
+            height: 350px;
+            background-color: #54f;
+        }
+        #slider {
+            width: 100%;
+            height: 350px;
+            background-color: #11d7ff;
+        }
+        #contents {
+            width: 100%;
+            display: flex;
+        }
+        #contents .content1 {
+            width: 33.333%;
+            height: 200px;
+            background-color: #12f;
+        }
+        #contents .content2 {
+            width: 33.333%;
+            height: 200px;
+            background-color: rgb(188, 230, 250);
+        }
+        #contents .content3 {
+            width: 33.333%;
+            height: 200px;
+            background-color: rgb(17, 192, 255);
+        }
+        #footer {
+            width: 100%;
+            display: flex;
+        }
+        #footer .footer1 {
+            width: 20%;
+            height: 100px;
+            background-color: #adf;  
+        }
+        #footer .footer2 {
+            width: 80%;
+            height: 100px;
+            background-color: rgb(96, 17, 255);
+        }
+        #footer .footer2 .footer2-1 {
+            width: 100%;
+            height: 50px;
+            background-color: #acf;
+        }
+        #footer .footer2 .footer2-2 {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(170, 249, 255);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <aside id="aside">
+            <h1 class="logo"></h1>
+            <nav class="nav"></nav>
+        </aside>
+        <!-- as -->
+        <main id="main">
+            <article id="slider"></article>
+        <!-- s -->
+        <section id="contents">
+            <article class="content1"></article>
+            <article class="content2"></article>
+            <article class="content3"></article>
+        </section>
+        <!-- c -->
+        <footer id="footer">
+            <div class="footer1"></div>
+            <div class="footer2">
+                <div class="footer2-1"></div>
+                <div class="footer2-2"></div>
+            </div>
+        </footer>
+        </main>
+    </div>
+</body>
+</html>
