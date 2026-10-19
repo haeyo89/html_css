@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A4-회원가입</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: sans-serif;
+      background-color: #f5f5f5;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .signup-card {
+      width: 100%;
+      max-width: 400px;
+      background-color: #ffffff;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    .signup-card h2 {
+      margin-bottom: 24px;
+      color: #222222;
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #333333;
+    }
+
+    .required-mark {
+      color: #e53935;
+      margin-left: 2px;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cccccc;
+      border-radius: 6px;
+      font-size: 0.95rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .form-group input:focus {
+      border-color: #1a73e8;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #1a73e8;
+      color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .submit-btn:hover {
+      background-color: #1557b0;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="signup-card">
+    <h2>회원가입/로그인</h2>
+    <form action="#" method="post">
+      
+      <div class="form-group">
+        <label for="user-name">이름을 입력해주세요<span class="required-mark">*</span></label>
+        <input type="text" id="user-name" name="name" required placeholder="이름을 입력하세요">
+      </div>
+
+      <div class="form-group">
+        <label for="user-email">이메일 주소를 입력해주세요<span class="required-mark">*</span></label>
+        <input type="email" id="user-email" name="email" required placeholder="~~@email.com">
+      </div>
+
+      <div class="form-group">
+        <label for="user-password">비밀번호를 입력해주세요<span class="required-mark">*</span></label>
+        <input type="password" id="user-password" name="password" required placeholder="비밀번호를 입력하세요">
+      </div>
+
+      <div class="form-group">
+        <label for="confirm-password">비밀번호를 다시 입력해주세요<span class="required-mark">*</span></label>
+        <input type="password" id="confirm-password" name="confirmPassword" required placeholder="비밀번호를 다시 입력하세요">
+      </div>
+
+      <button type="submit" class="submit-btn">회원가입</button>
+    </form>
+  </main>
+
+</body>
+</html>
